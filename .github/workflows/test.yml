@@ -1,0 +1,26 @@
+name: run Tests
+
+on: push
+
+jobs:
+  build-n-test:
+    name: test the package
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.x"
+    - name: Install pypa/build
+      run: >-
+        python3 -m
+        pip install
+        build setuptools
+        --user
+    - name: Build and install C extensions
+      run: >-
+        python3 setup.py install
+    - name: Run tests
+      run: >-
+        python3 tests.py
