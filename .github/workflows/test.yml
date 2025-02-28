@@ -23,4 +23,4 @@ jobs:
         python3 setup.py install
     - name: Run tests
       run: >-
-        python3 tests/tests.py
+        for i in `echo tests/*.py` ; do python3 $i ; done
