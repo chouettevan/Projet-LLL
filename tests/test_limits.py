@@ -1,7 +1,6 @@
 import unittest
 import math
 import sys
-sys.path.append('../../python')
 import limit
 
 
