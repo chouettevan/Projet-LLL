@@ -10,7 +10,7 @@ def integral(func,a,b,delta=0.001):
     x = a
     while x < b:
         total += func(x)*delta
-        a += delta
+        x += delta
 
 def fourier_transform(func,delta=0.001,n=1000):
     def t1(e):
