@@ -1,5 +1,5 @@
 import math
-def summation(func,a,b):
+def sum(func,a,b):
     total = 0
     for i in range(a,b):
         total += func(i)
