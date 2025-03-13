@@ -11,6 +11,7 @@ def integral(func,a,b,delta=0.001):
     while x < b:
         total += func(x)*delta
         x += delta
+    return total
 
 def fourier_transform(func,delta=0.001,n=1000):
     def t1(e):
