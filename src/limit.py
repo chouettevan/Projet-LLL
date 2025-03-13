@@ -1,7 +1,7 @@
 import math
 def sum(func,a,b):
     total = 0
-    for i in range(a,b):
+    for i in range(a,b+1):
         total += func(i)
     return total
 
