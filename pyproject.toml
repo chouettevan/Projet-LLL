@@ -9,7 +9,7 @@ dynamic = ["version"]
 requires-python = ">= 3.8"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["math","integral","functions","calculus","derivative","fourier"]
+keywords = ["math","integral","functions","calculus","derivative","fourier","gcd"]
 
 [project.urls]
 repository = "https://github.com/chouettevan/Projet-LLL"
