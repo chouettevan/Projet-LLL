@@ -4,6 +4,8 @@ on: push
 
 jobs:
   build-n-publish:
+	permissions:
+		id-token: write
     name: Build and publish Python 🐍 distributions 📦 to PyPI and TestPyPI
     runs-on: ubuntu-latest
     steps:
@@ -29,3 +31,4 @@ jobs:
     - name: Publish distribution 📦 to PyPI
       if: startsWith(github.ref, 'refs/tags')
       uses: pypa/gh-action-pypi-publish@release/v1
+
