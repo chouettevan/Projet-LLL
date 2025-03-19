@@ -14,6 +14,8 @@ class Tests(unittest.TestCase):
     def test_integral(self):
         self.assertGreater(limit.integral(math.sin,-1,1),-0.01) 
         self.assertGreater(0.01,limit.integral(math.sin,-1,1)) 
+	def test_fourier_transform(self):
+		self.assertGreater(limit.fourier_transform(math.sin)(1),10**6)
 
 
 if __name__ == '__main__':
