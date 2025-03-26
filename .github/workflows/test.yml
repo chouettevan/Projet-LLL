@@ -20,7 +20,7 @@ jobs:
         --user
     - name: Build and install C extensions
       run: >-
-        python3 setup.py install
+        python3 -m pip install .
     - name: Run tests
       run: >-
         for i in `echo tests/*.py`; do python3 $i ; done
