@@ -14,4 +14,5 @@ keywords = ["math","integral","functions","calculus","derivative","fourier","gcd
 [project.urls]
 repository = "https://github.com/chouettevan/Projet-LLL"
 
-
+[tool.setuptools.package-dir]
+maravilla  = "src"

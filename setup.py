@@ -1,7 +1,2 @@
-from setuptools import setup,Extension
-
-setup(
-        package_dir = {
-            "maravilla":"src"
-        }
-)
+from setuptools import setup
+setup()
