@@ -1,7 +1,7 @@
 import unittest
 import math
 import sys
-import limit
+import maravilla.limit
 
 
 class Tests(unittest.TestCase):
