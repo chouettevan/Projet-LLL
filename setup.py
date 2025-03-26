@@ -2,6 +2,6 @@ from setuptools import setup,Extension
 
 setup(
         package_dir = {
-            "":"src"
+            "maravilla":"src"
         }
 )
