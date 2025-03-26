@@ -1,4 +1,4 @@
-def pgcd(unsigned int a,unsigned int b):
+def pgcd(a,b):
     while a > 1 && b > 1:
         if a > b:
             a = a % b
@@ -10,4 +10,3 @@ def pgcd(unsigned int a,unsigned int b):
         return b
     if b == 0:
         return a
-    return -1
