@@ -10,6 +10,7 @@ def totient(x):
 			tab.append(debut)
 			while x % debut == 0:
 				x = int(x/debut)
+		debut += 1
 	r = x
 	for i in tab:
 		r *= (1-1/i)
