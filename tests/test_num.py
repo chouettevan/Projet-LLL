@@ -1,5 +1,5 @@
 import unittest
-from maravilla import num
+import maravilla.num as num 
 
 class Tests(unittest.TestCase):
     def test_pgcd(self):
