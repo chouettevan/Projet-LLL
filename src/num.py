@@ -1,13 +1,20 @@
+import math
 
-def pgcd(a,b):
-    while a > 1 and b > 1:
-        if a > b:
-            a = a % b
-        else:
-            b = b % a
-    if a == 1 or  b == 1:
-        return 1
-    if a == 0:
-        return b
-    if b == 0:
-        return a
+def totient(x):
+	if math.is_prime(x):
+		return x-1
+	start = 2
+	arr = []
+	while start <= x:
+		if x % start == 0:
+			arr.append(start)
+			while x % start == 0:
+				x = int(x/start)
+	r = x
+	for i in arr:
+		r *= (1-1/i)
+	return int(r)
+
+			
+		
+
