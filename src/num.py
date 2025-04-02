@@ -1,12 +1,12 @@
 import math
 
 def totient(x):
-	if math.is_prime(x):
-		return x-1
 	start = 2
 	arr = []
-	while start <= x:
+	tested = False
+	while start <= x && (tested || start*start < x):
 		if x % start == 0:
+			tested = True
 			arr.append(start)
 			while x % start == 0:
 				x = int(x/start)
