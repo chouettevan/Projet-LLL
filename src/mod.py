@@ -18,6 +18,8 @@ class Modulo():
 
 	def __eq__(self,other):
 		return (self.ojet == other.objet and self.mod == other.mod)
+	def __str__(self):
+		return str(self.objet) + ' % ' + str(self.mod)
 
 	
 		
