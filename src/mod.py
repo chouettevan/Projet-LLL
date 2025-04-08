@@ -17,7 +17,7 @@ class Modulo():
 		return result
 
 	def __eq__(self,other):
-		return (self.ojet == other.objet && self.mod == other.mod)
+		return (self.ojet == other.objet and self.mod == other.mod)
 
 	
 		
