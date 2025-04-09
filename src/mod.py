@@ -5,16 +5,16 @@ class Modulo():
 		self.mod = mod
 
 	def __add__(self,other):
-		return (self.objet  + other.objet) % mod
+		return (self.objet  + other.objet) % self.mod
 		
 	def __sub__(self,other):
-		return (self.objet - other.objet) % mod
+		return (self.objet - other.objet) % self.mod
 
 	def __floordiv__(self,other):
-		return (self.objet // other.objet) % mod
+		return (self.objet // other.objet) % self.mod
 
 	def __mul__(self,other):
-		return (self.objet * other.objet) % mod
+		return (self.objet * other.objet) % self.mod
 
 	def __pow__(self,other):
 		result = self
