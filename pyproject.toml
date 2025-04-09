@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "maravilla"
 description = "A small and simple python library which provides basic to advanced math functionality"
-version = "0.5.1"
+version = "0.6.1"
 requires-python = ">= 3.8"
 readme = "README.md"
 license = {file = "LICENSE"}
