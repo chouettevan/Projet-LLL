@@ -1,5 +1,5 @@
 import unittest
-import maravilla.mod as mod
+from maravilla.mod import Modulo
 
 class testMod(unittest.TestCase):
 	def test_creation(self):
