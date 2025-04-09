@@ -28,7 +28,7 @@ class Modulo():
 		return (self.ojet == other.objet and self.mod == other.mod)
 
 	def __str__(self):
-			return '{} (mod {}'.format(str(self.objet),str(self.mod))	
+		return '{} (mod {}'.format(str(self.objet),str(self.mod))	
 	
 	
 		
