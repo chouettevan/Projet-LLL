@@ -1,5 +1,8 @@
 
 class Modulo():
+    """
+    Classe représentant un objet modulo n
+    """
     def __init__(self,objet,mod):
         self.objet = objet % mod
         self.mod = mod

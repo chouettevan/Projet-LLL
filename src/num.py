@@ -1,6 +1,5 @@
-import math
 
-def totient(x):
+def totient(x:int) -> int:
     """
         fonction phi d'euler
     """

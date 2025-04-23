@@ -1,6 +1,8 @@
 import math
 import cmath
-def sum(func,a,b):
+from collections.abc import Callable
+
+def sum(func:Callable[[complex],complex],a:int,b:int) -> complex:
     """
     prodède à la somme d'une fonction entre a et b
     """
@@ -9,7 +11,7 @@ def sum(func,a,b):
         total += func(i)
     return total
 
-def integral(func,a,b,delta=0.001):
+def integral(func:Callable[[float],complex],a:float,b:float,delta:float =0.001) -> complex:
     """
     intègre une fonction entre a et b
     """
@@ -20,7 +22,7 @@ def integral(func,a,b,delta=0.001):
         x += delta
     return total
 
-def fourier_transform(func,delta=0.001,n=1000):
+def fourier_transform(func:Callable[[float],float],delta:float=0.001,n:int=1000) -> Callable[[float],complex]:
     """
     transformée de fourier de f
     """
