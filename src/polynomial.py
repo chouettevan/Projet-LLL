@@ -1,7 +1,7 @@
 
 def evaluer(polynome:list,x:int) -> int:
     """
-    évalue le polynôme en x
+    évalue le polynôme en x,où le terme polynome[i] est associé à la puissance x^i
     """
     resultat = 0
     puissance = 1
@@ -13,6 +13,7 @@ def evaluer(polynome:list,x:int) -> int:
 def  isIrreductibleZ(polynome: list) -> bool:
     """
     tente de trouver un facteur de degré 1 à un polynôme (dans les entiers)
+    Retourne True si le polynôme est irréductible
     """
     if polynome[0] == 0:
         return False
@@ -25,6 +26,7 @@ def  isIrreductibleZ(polynome: list) -> bool:
 def isIrreductibleMod(polynome: list,mod:int) -> bool:
     """
     tente de trouver un facteur de degré 1 dans un polynôme (mod n)
+    Retourne True si le polynôme est irréductible
     """
     if polynome[0] % mod == 0:
        return False

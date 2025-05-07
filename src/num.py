@@ -1,7 +1,7 @@
 
 def totient(x:int) -> int:
     """
-        fonction phi d'euler
+    fonction phi d'euler
     """
     r = x
     debut = 2
