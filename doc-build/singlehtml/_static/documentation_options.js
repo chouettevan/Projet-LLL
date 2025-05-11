@@ -1,8 +1,8 @@
 const DOCUMENTATION_OPTIONS = {
     VERSION: '0.6.0',
-    LANGUAGE: '[en]',
+    LANGUAGE: '[fr]',
     COLLAPSE_INDEX: false,
-    BUILDER: 'html',
+    BUILDER: 'singlehtml',
     FILE_SUFFIX: '.html',
     LINK_SUFFIX: '.html',
     HAS_SOURCE: true,

@@ -10,7 +10,7 @@ def evaluer(polynome:list,x:int) -> int:
         puissance *= x
     return resultat
 
-def  isIrreductibleZ(polynome: list) -> bool:
+def isIrreductibleZ(polynome: list) -> bool:
     """
     tente de trouver un facteur de degré 1 à un polynôme (dans les entiers)
     Retourne True si le polynôme est irréductible
