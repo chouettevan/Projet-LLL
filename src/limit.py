@@ -1,6 +1,9 @@
 import math
 import cmath
 from collections.abc import Callable
+"""
+Le module limit calcule différentes limites par approximation numérique
+"""
 
 def sum(func:Callable[[complex],complex],a:int,b:int) -> complex:
     """

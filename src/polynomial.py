@@ -1,7 +1,12 @@
+"""
+Module servant à factoriser des polynômes,que ce soit dans les entier ou mod q.
+Les polynômes sont  représentés par des tableaux, de sorte que
+[1, 6 ,4, 3] correspond à 3x³ + 4x² + 6x + 1
+"""
 
 def evaluer(polynome:list,x:int) -> int:
     """
-    évalue le polynôme en x,où le terme polynome[i] est associé à la puissance x^i
+    évalue le polynôme en x
     """
     resultat = 0
     puissance = 1
